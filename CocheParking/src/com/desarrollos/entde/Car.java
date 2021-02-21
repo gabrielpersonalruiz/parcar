@@ -8,8 +8,7 @@ import java.awt.Color;
  * @Java MOOC team, UC3M
  * @2.0
  */
-public class Car
-{
+public class Car{
     // Attributes of the class Car
     static int numberWheels = 4;                // Number of wheels                           
     
@@ -33,7 +32,7 @@ public class Car
         slowDown();
         moveDown();
         accelerate();
-        car.printGarage();
+        g.printGarage();
 //        turnRight();
 //        turnHeadlightsOn();
 //        turnHeadlightsOff();
@@ -43,7 +42,7 @@ public class Car
      * Accelerate the car
      * @throws InterruptedException 
      */
-    public void accelerate() throws InterruptedException{
+    public static void accelerate() throws InterruptedException{
         String c = new String("*");
         String space = new String(" ");
     	for(int i=0; i<5; i++)
@@ -58,8 +57,8 @@ public class Car
      * Slow down the car
      * @throws InterruptedException 
      */
-    public void slowDown() throws InterruptedException{
-    	string c = new string("     *");
+    public static void slowDown() throws InterruptedException{
+    	String c = new String("     *");
     	for(int i=0; i<5; i++)
         {
         	System.out.print(c);
@@ -73,9 +72,9 @@ public class Car
      * Move the car downwards
      * @throws InterruptedException 
      */    
-    public void moveDown() throws InterruptedException{
-    	string c = new string("\t\t\t\t  *"));
-    	for(int i=0, i<5, i++)
+    public static void moveDown() throws InterruptedException{
+    	String c = new String("\t\t\t\t  *");
+    	for(int i=0; i<5; i++)
         {
     		if(i!=4)
     			System.out.println(c);
